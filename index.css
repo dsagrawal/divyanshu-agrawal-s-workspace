@@ -1,0 +1,26 @@
+
+/**
+ * @license
+ * SPDX-License-Identifier: Apache-2.0
+*/
+
+/* Custom scrollbar behaviors */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* AI colors animation override if needed */
+.animate-google-colors {
+  animation: googleColors 4s infinite linear;
+}
+
+@keyframes googleColors {
+  0%, 100% { background-color: #4285F4; }
+  25% { background-color: #EA4335; }
+  50% { background-color: #FBBC04; }
+  75% { background-color: #34A853; }
+}
